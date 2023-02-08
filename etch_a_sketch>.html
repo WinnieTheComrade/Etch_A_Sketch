@@ -8,11 +8,27 @@
     <link rel="stylesheet" href="etch_a_sketch.css">
 </head>
 <body>
-    <div class="container">
-        <div class="board"></div>
-        <button class="reset">Reset</button>
-
+    <h1>Etch-a-Scetch</h1>
+    <div class = 'container'>
+        <div class = 'board'></div>
+        <div class = 'buttons'>
+            <button onclick="changeCanvasColor()">Canvas Color</button>
+            <button onclick="resetGrid()">Reset</button>
+        </div>        
     </div>
+        <div class="inputSize">
+            <input type="text" id="size" value ="16" onchange="changeSize(this.value)">
+            <button>Set Size</button>
+        </div>
+        <div>
+            <label for="brushColor">Brush Color</label>
+            <input type="color" id="brushColor" value="#000000">
+        </div>
+        <div>
+            <label for="changeCanvasColor">Canvas Color</label>
+            <input type="color" id="canvasColor" value="#ffffff">
+        </div>
+        
     <script src="etch_a_sketch.js"></script>
 </body>
 </html>
